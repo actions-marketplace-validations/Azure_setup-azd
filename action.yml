@@ -4,8 +4,8 @@ author: 'Azure Developer CLI Team'
 inputs:
   version:
     required: false
-    description: 'The version of azd to install (default: latest)'
+    description: 'The azd version to install: latest, stable, daily, or a semantic version such as 1.2.3, 1.2.3-beta.1, or 1.2.3+build.5 (default: latest)'
     default: 'latest'
 runs:
-  using: 'node20'
+  using: 'node24'
   main: 'dist/index.js'
